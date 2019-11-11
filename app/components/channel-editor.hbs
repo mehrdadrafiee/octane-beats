@@ -1,0 +1,7 @@
+<div>
+  <span>{{@channel.sound}}</span>
+
+  {{#each @channel.steps as |step|}}
+    <StepEditor @step={{step}} />
+  {{/each}}
+</div>

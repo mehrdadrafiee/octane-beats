@@ -1,0 +1,5 @@
+<div class="p-2">
+  {{#each @song.channels as |channel|}}
+    <ChannelEditor @channel={{channel}} />
+  {{/each}}
+</div>

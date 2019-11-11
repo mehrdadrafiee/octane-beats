@@ -1,0 +1,7 @@
+{{#each this.audio.sounds as |sound|}}
+  <button
+    class="p-4 bg-yellow-300 m-1"
+    {{on "click" (fn this.audio.playSound sound)}}>
+    {{sound}}
+  </button>
+{{/each}}

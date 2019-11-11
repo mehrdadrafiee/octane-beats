@@ -1,0 +1,12 @@
+<div class="p-4 bg-white-200">
+  {{#if this.playback.isPlaying}}
+    <button {{on "click" this.playback.stop}}>Stop</button>
+  {{else}}
+    <button {{on "click" this.playback.play}}>Play</button>
+  {{/if}}
+  <button {{on "click" this.playback.decreaseTempo}}>-</button>
+  [{{@song.tempo}} BPM]
+  <button {{on "click" this.playback.increaseTempo}}>+</button>
+  [{{this.playback.tickCount}}]
+  [{{@song.name}}]
+</div>

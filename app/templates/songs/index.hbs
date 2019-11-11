@@ -1,0 +1,9 @@
+<ul>
+  {{#each @model as |song|}}
+    <li>
+      <LinkTo @route="songs.song" @model={{song}}>
+        {{song.name}}
+      </LinkTo>
+    </li>
+  {{/each}}
+</ul>
